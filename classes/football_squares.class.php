@@ -23,7 +23,6 @@ class football_squares{
 				header("Location: index.php");
 			}
 		}
-		
 	
 		function write($id,$value){
 
@@ -141,7 +140,6 @@ class football_squares{
 				return $h;			
 		}
 		
-		
 		function stat_data(){
 			
 			$data = $this->data();
@@ -220,7 +218,6 @@ class football_squares{
 			return $h;
 			
 		}
-	
 			
 		function sanitize($input) {
 			$output = addslashes(htmlspecialchars(strip_tags(trim($input))));
