@@ -155,6 +155,16 @@ class football_squares{
 				unset($data[$i]);
 			}
 
+			$index = 1;
+			for($i=0; $i< $this->rows+2; $i++){
+				if($i == 0){
+					unset($data[$i]);
+				}else{
+					$index = $index + 11;
+					unset($data[$i]);
+				}
+			}
+
 			$total = count($data);
 			$totals = array_count_values($data);
 			$left = ($this->rows * $this->cols) - $total;
