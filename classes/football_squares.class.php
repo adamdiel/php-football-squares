@@ -103,6 +103,9 @@ class football_squares{
 						$num = $cols + $abs;
 								
 						if($data[$num] == ''){
+							if($i==0){
+								$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >TBD</a>';	
+							}
 							$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >Register <br>#'.$num.'</a>';	
 						}else{
 							if($this->auth() == true){
