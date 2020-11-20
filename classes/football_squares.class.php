@@ -178,7 +178,7 @@ class football_squares{
 			</script> 
 			<h2>Stats</h2>
 			<div id="progressbar"><div class="progress-label">'.$total .'% Complete, only '.$left.' squares left. </div></div>	
-			'.$total_squares.'	
+			'.$total_squares.''.$data.'	
 			</div>';
 			
 			return $h;
