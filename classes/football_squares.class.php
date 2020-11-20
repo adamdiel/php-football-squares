@@ -105,8 +105,9 @@ class football_squares{
 						if($data[$num] == ''){
 							if($i==0){
 								$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >TBD</a>';	
+							}else{
+								$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >Register <br>#'.$num.'</a>';	
 							}
-							$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >Register <br>#'.$num.'</a>';	
 						}else{
 							if($this->auth() == true){
 								$picked = 'javascript:squares_popup(\'.register_square_'.$num.'\')';
