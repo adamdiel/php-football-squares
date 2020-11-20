@@ -78,7 +78,7 @@ class football_squares{
 				}
 				
 				
-				$columns = 100 /  $this->cols;
+				$columns = 100 /  ($this->cols+1);
 				$data = $this->data();
 				
 				
@@ -92,13 +92,13 @@ class football_squares{
 				$abs = 0;
 					
 					
-				for($i=0; $i< $this->rows; $i++){
+				for($i=0; $i< $this->rows+1; $i++){
 					if($i != 0){
 						$abs += $this->cols;
 					}
 					$cols =0;
 					$h .= '<div class="square_row">';
-					for($c=0; $c< $this->cols; $c++){
+					for($c=0; $c< $this->cols+1; $c++){
 						$cols++;
 						$num = $cols + $abs;
 						if($this->auth() == true){
