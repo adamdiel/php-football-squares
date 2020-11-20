@@ -117,7 +117,7 @@ class football_squares{
 								if($i==0 and $c==0){
 									$link = '<a href="#" class="chosen">SCORES</a>';	
 								}else{
-									$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >TBD</a>';	
+									$link = '<a href="'.$picked.'">TBD</a>';	
 								}
 							}else{
 								$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >Register <br>#'.$num.'</a>';	
