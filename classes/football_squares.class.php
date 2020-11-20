@@ -120,7 +120,7 @@ class football_squares{
 									$link = '<a href="'.$picked.'">TBD</a>';	
 								}
 							}else{
-								$num = $num - 11;
+								# $num = $num - 11;
 								$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >Register <br>#'.$num.'</a>';	
 							}
 						}else{
