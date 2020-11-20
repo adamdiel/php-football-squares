@@ -171,7 +171,6 @@ class football_squares{
 				$total = 0;
 			}
 
-			$total = count($data);
 			$totals = array_count_values($data);
 			$left = ($this->rows * $this->cols) - $total;
 			$total_squares .='<ul>';
