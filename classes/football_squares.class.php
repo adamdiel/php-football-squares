@@ -151,8 +151,7 @@ class football_squares{
 			
 			$data = $this->data();
 
-			for($i=0; $i< $this->cols+1; $i++){
-				$i++;
+			for($i=0; $i< $this->cols+2; $i++){
 				unset($data[$i]);
 			}
 
