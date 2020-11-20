@@ -151,10 +151,10 @@ class football_squares{
 			
 			$data = $this->data();
 
-			unset($data[1]);
-			unset($data[2]);
-			unset($data[3]);
-			
+			for($i=0; $i< $this->cols+1; $i++){
+				unset($data[$i]);
+			}
+
 			$total = count($data);
 			$totals = array_count_values($data);
 			$left = ($this->rows * $this->cols) - $total;
@@ -178,7 +178,7 @@ class football_squares{
 			</script> 
 			<h2>Stats</h2>
 			<div id="progressbar"><div class="progress-label">'.$total .'% Complete, only '.$left.' squares left. </div></div>	
-			'.$total_squares.''.$data.'	
+			'.$total_squares.'
 			</div>';
 			
 			return $h;
