@@ -161,7 +161,7 @@ class football_squares{
 					unset($data[$i]);
 				}else{
 					$index = $index + 11;
-					unset($data[$i]);
+					unset($data[$index]);
 				}
 			}
 
