@@ -101,6 +101,16 @@ class football_squares{
 					for($c=0; $c< $this->cols; $c++){
 						$cols++;
 						$num = $cols + $abs;
+						if($this->auth() == true){
+							$picked = 'javascript:squares_popup(\'.register_square_'.$num.'\')';
+								 
+							if($data[$num] != ''){
+								$entry  = $data[$num];
+							}
+						}else{
+							$picked = '#';	
+							$entry  = '';
+						}
 								
 						if($data[$num] == ''){
 							if($i==0 or $c==0){
@@ -113,18 +123,6 @@ class football_squares{
 								$link = '<a href="javascript:squares_popup(\'.register_square_'.$num.'\')" >Register <br>#'.$num.'</a>';	
 							}
 						}else{
-							if($this->auth() == true){
-								$picked = 'javascript:squares_popup(\'.register_square_'.$num.'\')';
-									 
-								if($data[$num] != ''){
-									$entry  = $data[$num];
-								}
-							}else{
-								$picked = '#';	
-								$entry  = '';
-							}
-									
-									
 							$link = '<a href="'.$picked.'" class="chosen">'.$data[$num].'</a>';	
 						}
 								
