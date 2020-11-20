@@ -94,7 +94,7 @@ class football_squares{
 					
 				for($i=0; $i< $this->rows+1; $i++){
 					if($i != 0){
-						$abs += $this->cols;
+						$abs += $this->cols+1;
 					}
 					$cols =0;
 					$h .= '<div class="square_row">';
