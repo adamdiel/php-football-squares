@@ -78,7 +78,7 @@ class football_squares{
 				}
 				
 				
-				$columns = 100 /  $this->cols;
+				$columns = 100 /  ($this->cols+1);
 				$data = $this->data();
 				
 				
