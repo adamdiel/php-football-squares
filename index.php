@@ -12,10 +12,10 @@ $squares->currency_symbol = '$';
 <head>
 <meta charset="utf-8">
 <title>Football Squares</title>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="js/scripts.js"></script>
-<link rel='stylesheet' href='http://code.jquery.com/ui/1.10.4/themes/redmond/jquery-ui.css' type='text/css' media='all' />
+<link rel='stylesheet' href='https://code.jquery.com/ui/1.10.4/themes/redmond/jquery-ui.css' type='text/css' media='all' />
 <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
 </head>
 
